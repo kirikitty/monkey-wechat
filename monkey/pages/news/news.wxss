@@ -1,0 +1,25 @@
+/* pages/news/news.wxss */
+
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 106px;
+}
+
+.item image {
+  width: 140px;
+  height: 105px;
+  flex: 3;
+}
+
+.item .text {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.author {
+  margin-top: 5px;
+  color: #aaa;
+}

@@ -1,0 +1,11 @@
+<!--pages/news/news.wxml-->
+<button bindtap='reloadNews'>刷新</button>
+<view wx:for='{{ news_list }}' wx:for-item='news'>
+  <view class='item'>
+    <image src='{{ news.picInfo[0].url }}' mode='aspectFill'></image>
+    <view class='text'>
+      <view> {{ news.title }} </view>
+      <view class='author'> {{ news.source }} </view>
+    </view>
+  </view>
+</view>

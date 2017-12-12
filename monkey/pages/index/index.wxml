@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <map class="user-margin" longitude="120.13046622273308" latitude="31.46505557104675">
+  </map>
+  <audio class='user-margin' name='Refrain' author='Anan Ryoko' controls='true' src='http://up.mcyt.net/md5/53/MTAyMDQwMA_Qq4329912.mp3' poster='http://p3.music.126.net/HpNhvHFZXTLwrVXMT7WP8g==/109951163028848374.jpg'></audio>
+  <view class="user-margin">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
